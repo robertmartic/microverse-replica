@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+p, h1, h2, h3, h4, a, em, span, .list li {
+    font-family: 'Montserrat';
+}
+
 .intro {
     display: flex;
     flex-direction: column;
@@ -98,9 +102,27 @@ nav {
     letter-spacing: 1px;
 }
 
+.coding-challenges-btn button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 h1 {
     font-size: 40px;
     margin-bottom: 20px;
+    color: #3e396b;
+}
+
+h2, h4 {
+    color: #636b98;
+}
+
+h3, h4 {
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 22px;
 }
 
 .posted-by {
@@ -148,20 +170,48 @@ article {
     width: 800px;
 }
 
+article p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.89;
+}
+
+.text-link {
+    color: #41d3bd;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.text-link:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.image-credits {
+    text-align: center;
+    font-size: 14px;
+}
+
+.unsplash-text {
+    font-size: 14px;
+}
+
 .image-2 {
     width: 800px;
     height: auto;
+    margin-bottom: 20px;
 }
 
 .topics {
     border: 1px solid black;
     width: 800px;
     padding: 35px;
+    margin-bottom: 50px;
 }
 
 .topics a {
     text-decoration: none;
-    color: rgb(154, 76, 226);
+    color: #481ceb;
     font-size: 18px;
 }
 
@@ -170,7 +220,7 @@ article {
 }
 
 .topics li {
-    margin-bottom: 5px;
+    line-height: 1.94em;
 }
 
 .topics li:last-child {
@@ -241,4 +291,66 @@ article {
     right: 20px;
     transform: rotate(-15deg);
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.list {
+    line-height: 2em;
+}
+
+.list li {
+    color: #636b98;
+    font-size: 18px;
+    margin-left: 50px;
+}
+
+.list li:last-child {
+    margin-bottom: 20px;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(226, 226, 226);
+    margin-bottom: 100px;
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 50px;
+    align-self: flex-start;
+}
+
+.profile-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.profile-description {
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    line-height: 2.2rem;
+    margin-bottom: 30px;
+    margin-right: 40px;
+}
+
+.profile-link {
+    font-size: 1rem;
+    color: #27ae60;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.profile-link:hover {
+    text-decoration: underline;
 }
