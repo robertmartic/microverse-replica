@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
-p, h1, h2, h3, h4, a, em, span, .list li {
-    font-family: 'Montserrat';
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .intro {
@@ -365,8 +364,17 @@ article p {
 .footer-container {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     max-width: 1200px;
     margin: auto;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 50px;
 }
 
 .footer-column {
@@ -387,6 +395,7 @@ article p {
 
 .footer-column ul li {
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .footer-column ul li a {
@@ -409,4 +418,8 @@ article p {
     margin-top: 30px;
     font-size: 0.9rem;
     opacity: 0.8;
+}
+
+.footer-copyright {
+    opacity: 0.5;
 }
